@@ -1,0 +1,9 @@
+.Card {
+    border: 2px rgb(174, 172, 172) solid;
+    height: 30rem;
+    width: 50rem;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.496);
+}
