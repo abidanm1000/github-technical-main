@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import '../styles/Searchbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
@@ -6,26 +6,28 @@ import axios from "axios";
 
 
 export default function Searchbar({user, setUser}) {
+  const [login, setLogin] = useState('octocat');
 
   const searchInput = useRef();
   
   const getLogin = () => {
-     setUser(searchInput.current.value);
+     setLogin(searchInput.current.value);
   }
 
   // Github API call with Axios Get method
   useEffect(()=> {
     const getUser = async () => {
       try {
-        await axios.get(`https://api.github.com/users/${user}`)
+        await axios.get(`https://api.github.com/users/${login}`)
         .then(response => setUser(response.data))
       } catch(err) {
-        console.log(err)
+        // will log if api request rate limits have been exceeded
+        console.log(err.response.data.message)
       }
     }
 
     getUser();
-  }, [user])
+  }, [login, user])
 
   return (
     <div className='Searchbar'>

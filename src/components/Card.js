@@ -4,8 +4,8 @@ import Searchbar from './Searchbar';
 import User from './User';
 
 export default function Card() {
-  const [user, setUser] = useState('octocat');
-  console.log(user)
+  const [user, setUser] = useState({});
+
   return (
     <div className='Card'>
       <Searchbar setUser={setUser} user={user}/>
