@@ -17,6 +17,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.15rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
 }
 
 #bio-description {
@@ -26,8 +30,6 @@
     -webkit-box-orient: vertical;  
     overflow: hidden;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #profile-image {

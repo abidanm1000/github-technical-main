@@ -8,6 +8,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function User({user}) {
+    
   return (
     <div className='User'>
         <div className='details top'>
