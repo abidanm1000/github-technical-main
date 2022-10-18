@@ -1,5 +1,7 @@
 # Github Technical Main - https://fancy-kitten-3ac710.netlify.app/
 
+![alt text](https://github.com/abidanm1000/github-technical-main/blob/main/Github-API.jpg?raw=true)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
