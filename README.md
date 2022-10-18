@@ -1,4 +1,4 @@
-# Github Technical Main - https://fancy-kitten-3ac710.netlify.app/
+# Github API Challenge - https://fancy-kitten-3ac710.netlify.app/
 
 ![alt text](https://github.com/abidanm1000/github-technical-main/blob/main/Github-API.jpg?raw=true)
 
